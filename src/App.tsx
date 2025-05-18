@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import LoadingScreen from "./components/LoadingScreen";
+import PortfolioMain from "./components/PortfolioMain";
+import InvolvedProjects from "./components/InvolvedProjects";
+import Resume from "./components/Resume";
+import Loader from "./components/Loader";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
+
+  useEffect(() => {
+    const fadeTimer = setTimeout(() => setFadeOut(true), 2500); // trigger fade-out
+    const finalTimer = setTimeout(() => setLoading(false), 3500); // hide loader
+
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(finalTimer);
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {loading && <Loader fadeOut={fadeOut} />}
+      {!loading && (
+        <div className="main-content fade-in">
+          <PortfolioMain />
+          <InvolvedProjects />
+          <Resume />
+        </div>
+      )}
+    </>
   );
 }
 
