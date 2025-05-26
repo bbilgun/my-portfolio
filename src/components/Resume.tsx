@@ -10,7 +10,7 @@ const Resume: React.FC = () => {
       link: "https://everest.mn", // example link
     },
     {
-      role: "Development Team Member, Vice President",
+      role: "Development Team Member, President",
       company: "Sys&CoTech Club",
       duration: "2022 – Present",
       description:
