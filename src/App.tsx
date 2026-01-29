@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import LoadingScreen from "./components/LoadingScreen";
 import PortfolioMain from "./components/PortfolioMain";
 import InvolvedProjects from "./components/InvolvedProjects";
 import Resume from "./components/Resume";
 import Loader from "./components/Loader";
-import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
   const [loading, setLoading] = useState(true);
