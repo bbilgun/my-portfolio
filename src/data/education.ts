@@ -4,7 +4,7 @@ export const education: Education[] = [
   {
     school: "Mongolian University of Science and Technology",
     degree: "Computer Science",
-    duration: "2019 – Present (Junior)",
+    duration: "2019 – Present (Senior)",
     link: "https://www.must.edu.mn",
   },
   {
