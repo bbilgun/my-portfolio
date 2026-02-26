@@ -4,7 +4,7 @@ export const experiences: Experience[] = [
   {
     role: "Frontend Developer",
     company: "EverestSolution",
-    duration: "2024 – Present",
+    duration: "2024.11 – 2026.2",
     description: "Building modern apps and UI components using React.",
     link: "https://everest.mn",
   },
@@ -13,7 +13,7 @@ export const experiences: Experience[] = [
     company: "Sys&CoTech Club",
     duration: "2022 – Present",
     description:
-      "Develops club application, websites using modern technologies.",
+      "Develops club application, websites using react, tailwindCSS.",
     link: "https://syscotech.mn",
   },
   {

@@ -7,17 +7,17 @@ import EducationCard from "./common/EducationCard";
 const Resume: React.FC = () => {
   return (
     <section
-      className="bg-gradient-to-b from-white to-gray-50 dark:bg-gradient-to-br dark:from-background-dark-primary dark:via-background-dark-secondary dark:to-background-dark-secondary text-gray-900 dark:text-white py-20 px-6 sm:px-12 md:px-20 transition-colors duration-300"
+      className="bg-gradient-to-br from-background-dark-primary via-background-dark-secondary to-background-dark-secondary text-white py-20 px-6 sm:px-12 md:px-20 transition-colors duration-300"
       id="resume"
     >
-      <h2 className="text-4xl sm:text-5xl font-bold mb-14 text-primary-700 dark:text-primary-400 text-center tracking-tight">
+      <h2 className="text-4xl sm:text-5xl font-bold mb-14 text-primary-400 text-center tracking-tight">
         Short Resume
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Experience */}
         <div>
-          <h3 className="text-3xl font-semibold text-primary-700 dark:text-primary-300 mb-8 border-b border-primary-400 dark:border-primary-700 pb-2">
+          <h3 className="text-3xl font-semibold text-primary-300 mb-8 border-b border-primary-700 pb-2">
             Experience
           </h3>
           {experiences.map((exp, idx) => (
@@ -29,7 +29,7 @@ const Resume: React.FC = () => {
 
         {/* Education */}
         <div>
-          <h3 className="text-3xl font-semibold text-primary-700 dark:text-primary-300 mb-8 border-b border-primary-400 dark:border-primary-700 pb-2">
+          <h3 className="text-3xl font-semibold text-primary-300 mb-8 border-b border-primary-700 pb-2">
             Education
           </h3>
           {education.map((edu, idx) => (

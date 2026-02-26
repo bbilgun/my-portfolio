@@ -14,10 +14,10 @@ const Card: React.FC<CardProps> = ({
   hoverable = true,
 }) => {
   const baseClasses =
-    "rounded-xl shadow-md bg-gray-100 dark:bg-[#0f0f0f] p-4 transition-colors duration-300 border border-gray-200 dark:border-[#2a2a2a]";
+    "rounded-xl shadow-md bg-[#0f0f0f] p-4 transition-colors duration-300 border border-[#2a2a2a]";
 
   const hoverClasses = hoverable
-    ? "hover:border-primary-500 dark:hover:border-primary-600 hover:shadow-primary-300/30 dark:hover:shadow-primary-800/30"
+    ? "hover:border-primary-600 hover:shadow-primary-800/30"
     : "";
 
   const combined = `${baseClasses} ${hoverClasses} ${className}`;

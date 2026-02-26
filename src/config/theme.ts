@@ -13,11 +13,6 @@ export const theme = {
       900: "#3f0f5c",
     },
     background: {
-      light: {
-        primary: "#F9FAFB",
-        secondary: "#F3F4F6",
-        tertiary: "#E5E7EB",
-      },
       dark: {
         primary: "#000000",
         secondary: "#0a0a0a",

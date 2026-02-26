@@ -9,6 +9,9 @@ function App() {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
+    // Enforce dark mode
+    document.documentElement.classList.add("dark");
+
     const fadeTimer = setTimeout(() => setFadeOut(true), 2500); // trigger fade-out
     const finalTimer = setTimeout(() => setLoading(false), 3500); // hide loader
 

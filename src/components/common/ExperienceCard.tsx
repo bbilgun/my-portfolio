@@ -8,14 +8,14 @@ interface ExperienceCardProps {
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   return (
-    <Card href={experience.link}>
-      <h4 className="text-2xl font-bold text-primary-800 dark:text-primary-200">
+    <Card hoverable={false}>
+      <h4 className="text-2xl font-bold text-primary-200">
         {experience.role}
       </h4>
-      <p className="text-sm text-primary-600 dark:text-primary-500 mt-1 mb-2">
+      <p className="text-sm text-primary-500 mt-1 mb-2">
         {experience.company} • {experience.duration}
       </p>
-      <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+      <p className="text-gray-300 text-sm leading-relaxed">
         {experience.description}
       </p>
     </Card>

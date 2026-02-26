@@ -19,18 +19,18 @@ const Hero: React.FC = () => {
         }`}
       >
         <div className="flex flex-col gap-4 max-w-xl text-left items-start">
-          <span className="bg-primary-100 text-primary-700 px-3 py-1.5 rounded-lg text-sm font-semibold dark:bg-primary-900 dark:text-primary-200 border border-primary-300 dark:border-primary-700">
+          <span className="bg-primary-900 text-primary-200 px-3 py-1.5 rounded-lg text-sm font-semibold border border-primary-700">
             My name is
           </span>
 
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight text-primary-900 dark:text-gray-100">
+          <h1 className="text-4xl sm:text-5xl font-bold leading-tight text-gray-100">
             {profile.name}
           </h1>
-          <h2 className="uppercase text-primary-600 dark:text-primary-400 tracking-wider text-sm font-semibold">
+          <h2 className="uppercase text-primary-400 tracking-wider text-sm font-semibold">
             {profile.title}
           </h2>
 
-          <p className="text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
+          <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
             {profile.bio}
           </p>
           <a
